@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="projpizz.css">
+</head>
+<body>
+    <!-- Header Section with Image -->
+    <header style="background-image: url('images/entete.jpg');">
+        <div class="container">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/cmd.jpg" alt="Commande Logo" class="img-responsive">
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar Section Starts Here -->
+    <section class="navbar">
+        <div class="container">
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="projetpizzeria.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Navbar Section Ends Here -->
+
+    <section class="order-form">
+        <div class="container">
+            <h2 class="section-title">je commande maintenant</h2>
+            <form action="traitement-commande.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="adress">adress:</label>
+                    <input type="adress" id="adress" name="adress" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="pizza">Choose Pizza:</label>
+                    <select id="pizza" name="pizza" required>
+                        <option value="" disabled selected>Select Pizza</option>
+                        <option value="marguerite">Pizza Marguerite</option>
+                        <option value="tarantina">Pizza Tarantina</option>
+                        <option value="thon">Pizza Thon</option>
+                        <option value="regina">Pizza Regina</option>
+                        <option value="vegetarienne">Pizza Végétarienne</option>
+                        <option value="saumon">Pizza Saumon</option>
+                        <option value="4fromages">Pizza 4 Fromages</option>
+                        <option value="pecheur">Pizza Pécheur</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" adress="rue" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+                <button type="submit" class="btn btn-primary">confirmer la commande</button>
+            </form>
+        </div>
+    <!-- Contact Section Ends Here -->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>All rights reserved. Designed By <a href="#">KOLLI SARAH</a></p>
+        </div>
+    </footer>
+    <!-- Footer Section Ends Here -->
+</body>
+</html>
